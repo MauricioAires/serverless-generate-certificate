@@ -1,0 +1,92 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-10-09T20:08:44.872Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_9139d1bc35304678ad4b749481e00d5a",
+      "parentId": "wrk_a4d65e09846e48af8f986ac1197c9784",
+      "modified": 1696882087980,
+      "created": 1696881438762,
+      "url": "http://localhost:3000/dev/verifyCertificate/{% response 'body', 'req_e781e0a039aa4ac0b71899bdf0027602', 'b64::JC5pZA==::46b', 'never', 60 %}",
+      "name": "Verify Certificate",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/2023.5.8" }],
+      "authentication": {},
+      "metaSortKey": -1696881438762,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_a4d65e09846e48af8f986ac1197c9784",
+      "parentId": null,
+      "modified": 1696597627286,
+      "created": 1696597627286,
+      "name": "Serverless",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_e781e0a039aa4ac0b71899bdf0027602",
+      "parentId": "wrk_a4d65e09846e48af8f986ac1197c9784",
+      "modified": 1696598029835,
+      "created": 1696597630340,
+      "url": "http://localhost:3000/dev/generateCertificate",
+      "name": "Create Certificate",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": \"{% uuid 'v4' %}\",\n\t\"name\": \"Mauricio Aires\",\n\t\"grade\": 10\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1696597630340,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_286a7f4ebc965a6a9445f14b97676f2be6ea0a2d",
+      "parentId": "wrk_a4d65e09846e48af8f986ac1197c9784",
+      "modified": 1696597627292,
+      "created": 1696597627292,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1696597627292,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_286a7f4ebc965a6a9445f14b97676f2be6ea0a2d",
+      "parentId": "wrk_a4d65e09846e48af8f986ac1197c9784",
+      "modified": 1696597627295,
+      "created": 1696597627295,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
