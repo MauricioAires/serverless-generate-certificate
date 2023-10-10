@@ -9,6 +9,7 @@ Gerador de certificados com Serverless
 ### Tecnologias
 
 - [Serverless](https://www.serverless.com/)
+- [Handlebarsjs](https://handlebarsjs.com/)
 
 ### Instalação
 
@@ -22,6 +23,15 @@ yarn
 # Criar projeto
 $ serverless create --template [template] --path [project-name]
 $ serverless create --template aws-nodejs-typescript --path serverless-generate=certificate
+
+# Executar lambas em modo de desenvolvimento localmente
+$ serverless offline
+
+# instalar o dynamodb localmente
+$ serverless dynamodb install
+
+# Executar o dynamodb localmente
+$ serverless dynamodb start
 
 ```
 
